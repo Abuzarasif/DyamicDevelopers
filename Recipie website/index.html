@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="user styles.css">
+<script src="index.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+                     <!-- TOP LOGO  -->
+    <main class="container1">
+        <h4> Welcome to</h4>
+        <section class="animation">
+          <div class="first"><div>Cook.io</div></div>
+          <div class="second"><div>Cook.io</div></div>
+          <div class="third"><div>Cook.io</div></div>
+        </section>
+      </main>
+            <!-- --------------navbar---------------- -->
+           
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Cook.io</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">Recipes</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Register
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="login.html">Login</a></li>
+                          <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  href="personal-d.html">Personal Dashboard</a>
+                      </li>
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+            <!-- HOME PAGE  -->
+            <section class="banner" id="banner">
+                <div class="content">
+                    <h2>Always Choose Good</h2>
+                    <p>Lorem ipsum dolor, sit amet eum Quos ipsa ipsum amet eum ullam nulla quaerat optio quidem dolores, molestiae libero similique iusto inventore aliquam dolorem. Ratione perferendis ipsa culpa sapiente totam?
+                    </p>
+                    <a href="#recipes" class="btn">Our Recipes</a>
+                </div>
+            </section>
+            <!-- ABOUT PAGE  -->
+            <section class="about" id="about">
+                <div class="row">
+                    <div class="col50">
+                        <h2 class="titeText"><span>A</span>bout Us</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste eius, dolorem necessitatibus vel ipsam perspiciatis a? Possimus illo voluptas voluptatem natus quasi blanditiis aliquam est, veritatis laudantium libero iusto nam consectetur ullam molestiae numquam id, voluptates nemo velit totam dicta?
+                        <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea alias dolorem quod ratione dicta placeat aut! Neque natus ducimus repellat, dignissimos molestias obcaecati explicabo qui fugiat est, libero earum autem.
+                        </p>
+                    </div>
+                    <div class="col50">
+                        <div class="imgbx">
+                            <img src="https://i.postimg.cc/13F2DFKZ/pizza.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- RECIPES   -->
+    <section id="recipes">
+        <div class="recipes">
+            <div class="options">
+                <ul>
+                    <li><button onclick="myFunction1()"> Breakfast</button></li>
+                    <li><button onclick="myFunction2()">Lunch</button></li>
+                    <li><button onclick="myFunction3()" >Dinner</button></li>
+                    <li><button onclick="myFunction4()">Snacks</button></li>
+                    <li><button onclick="myFunction5()">User Profiles</button></li>
+                </ul>
+            </div>
+            <div id="breakfast">
+                <div class="breakfast">
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/1.jpg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Fried Eggs With Tomato</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/2.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Waffles with mushed cherry</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/3.jpg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Pancakes with blueberries</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/4.jpg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Mushed Fruit Cerelac</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/5.jpg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Mashed Potatoes</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/6.jpg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Indian Egg Paratha</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/7.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Vegies fried Egg</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="breakfast">
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/17.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Pancake Omelette</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/8.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Tortilla Wraps</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/9.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Pocket Eggs</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/10.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Mushed Berriess</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/11.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Roti cheese egg</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/12.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Pizza Pan Omelette</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="poster"><img src="images/breakfast/13.jpeg"
+                                    alt="Location Unknown"></div>
+                            <div class="details">
+                                <h1>Green Dumple Egg</h1>
+                                <h2>2021 • PG • 1hr 38min</h2>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.2/5</span>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Italian</span>
+                                    <span class="tag">Food</span>
+                                    <span class="tag">breakfast</span>
+                                </div>
+                                <p class="desc">
+                                    Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in
+                                    search for meaning.
+                                    <br><br>
+                                    <a href="recipes.html">Read More</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="lunch">
+               <div class="lunch">
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/1.jpeg');">
+                          <div class="property-image-title">
+                          
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Vegetable Rolls </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                    
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/2.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Mixed Vegies Rice </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/3.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5>chicken Sandwich</h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/4.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Mixed chaat </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/5.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Open Tortilla </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/6.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Fried vegie Rolls </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+              
+                    
+                  </div>
+               <div class="lunch">
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/7.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Chicken Piece Rice </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/8.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Mixed Chicken Steak </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/9.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Egg beef Soup </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/10.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Mixed Prawns </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/11.jpeg');">
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Salted Chicken roast </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+               <div class="wrapper">
+                    <div class="property-card">
+                      <a href="recipes.html">
+                        <div class="property-image" style="background-image: url('images/lunch/12.jpeg');"1>
+                          <div class="property-image-title">
+                            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                          </div>
+                        </div></a>
+                      <div class="property-description">
+                        <h5> Mustard Steak Sandwich </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                      </div>
+                      <a href="recipes.html">
+                        <div class="property-social-icons">
+                         Read More
+                        </div>
+                      </a>
+                    </div>
+                </div>
+              
+                    
+                  </div>
+               
+               
+            </div>
+
+            <div id="dinner">
+                <div class="dinner">
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/1.jpeg">
+                                <div class="overlay">
+                                    <h3>Fried Chilli Chicken</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                           
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/2.jpeg">
+                                <div class="overlay">
+                                    <h3>Prawn Spaghatti</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                           
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/3.jpeg">
+                                <div class="overlay">
+                                    <h3>Fried Pan Pizza</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/4.jpeg">
+                                <div class="overlay">
+                                    <h3>Vegetable Fried Fish</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/5.jpeg">
+                                <div class="overlay">
+                                    <h3>White Pepper Maccaroni</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/6.jpeg">
+                                <div class="overlay">
+                                    <h3>Vegetable bread base</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/7.jpeg">
+                                <div class="overlay">
+                                    <h3>White Spinach noodles</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="dinner">
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/8.jpeg">
+                                <div class="overlay">
+                                    <h3>Mushroom chiken salad</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/9.jpeg">
+                                <div class="overlay">
+                                    <h3>Boiled Chicken Steak</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/10.jpeg">
+                                <div class="overlay">
+                                    <h3>Masala Beef</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/11.jpeg">
+                                <div class="overlay">
+                                    <h3>White rice with Fried chicken</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/12.jpeg">
+                                <div class="overlay">
+                                    <h3>Fried Steamed Potato</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/13.jpeg">
+                                <div class="overlay">
+                                    <h3>Fish with Vegies</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box-area">
+                            <div class="box">
+                                <img alt="" src="images/dinner/14.jpeg">
+                                <div class="overlay">
+                                    <h3>Rice with steak and beans</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <a href="recipes.html">Read More</a>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="snacks">
+               <div class="snacks">
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url('images/snacks/1.jpeg')">
+                           <h1 class="text-shadow">Cream Salad</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url('images/snacks/2.jpeg')">
+                           <h1 class="text-shadow">Potato pepperoni chips</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url('images/snacks/3.jpeg')">
+                           <h1 class="text-shadow">Salty Popcorns</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/4.jpeg)">
+                           <h1 class="text-shadow">cheesy bites</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/5.jpeg)">
+                           <h1 class="text-shadow">Mashed Pockets</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/6.jpeg)">
+                           <h1 class="text-shadow">seseme seeds waffer</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/7.jpeg)">
+                           <h1 class="text-shadow">Samosa</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/8.jpeg)">
+                           <h1 class="text-shadow">Mini Bites</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+               </div>
+               <div class="snacks">
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/9.jpeg)">
+                           <h1 class="text-shadow">Apple cheese Slice</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/11.jpeg)">
+                           <h1 class="text-shadow">Biscuit Bites</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/12.jpeg)">
+                           <h1 class="text-shadow">Mini Stacker</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/13.jpeg)">
+                           <h1 class="text-shadow">Veggie cheese Jelepeno</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/14.jpeg)">
+                           <h1 class="text-shadow">Strawberry chocolate biscuits</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/15.jpeg)">
+                           <h1 class="text-shadow">Mashed Sauces</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/19.jpeg)">
+                           <h1 class="text-shadow">Potato cubes</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+                 <div class="wrapper">
+                    <div class="flip">
+                        <div class="front" style="background-image: url(images/snacks/16.jpeg)">
+                           <h1 class="text-shadow">Chinese noodles</hi>
+                        </div>
+                        <div class="back">
+                           <h2>Description</h2>
+                           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                           <br>
+                           <a href="recipes.html">Read More</a>
+                        </div>
+                    </div>
+                   
+                 </div>
+               </div>
+            </div>
+
+            <div id="userprofiles">
+                <header>
+                    <h1>User Profiles</h1>
+                  </header>
+                  <div class="container">
+                    <div class="profile-box">
+                      <img src="images/menu.png " class="menu-icon" alt="" />
+                      <img src="images/setting.png " class="setting-icon" alt="" />
+                      <img src="images/pic 1.jpg" class="pic-icon" alt="" />
+                      <h3>Jack NIcholson</h3>
+                      <p>Chef at Vijoks, California</p>
+                      <div class="social">
+                        <a href="#"><img src="images/instagram.png" alt="" /></a>
+                        <a href="#"><img src="images/telegram.png" alt="" /></a>
+                        <a href="#"><img src="images/dribble.png" alt="" /></a>
+                      </div>
+              
+                      <button type="button">Follow</button>
+              
+                      <div class="card">
+                        <div class="poster">
+                          <img src="images/breakfast/2.jpeg" alt="Location Unknown" />
+                        </div>
+                        <div class="details">
+                          <h1>Waffles with mushed cherry</h1>
+                          <h2>2021 • PG • 1hr 38min</h2>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.2/5</span>
+                          </div>
+                          <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Food</span>
+                            <span class="tag">breakfast</span>
+                          </div>
+                          <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a
+                            solitary journey in search for meaning.
+                            <br /><br />
+                            <a href="recipes.html">Read More</a>
+                          </p>
+                        </div>
+                      </div>
+                      <p>View More Recipes</p>
+                      <a href="recipes.html"><img src="images/arrow.png" class="arrow" /></a>
+                    </div>
+              
+                    <div class="profile-box">
+                      <img src="images/menu.png " class="menu-icon" alt="" />
+                      <img src="images/setting.png " class="setting-icon" alt="" />
+                      <img src="images/pic 2.jpg" class="pic-icon" alt="" />
+                      <h3>Jack NIcholson</h3>
+                      <p>Chef at Vijoks, California</p>
+                      <div class="social">
+                        <a href="#"><img src="images/instagram.png" alt="" /></a>
+                        <a href="#"><img src="images/telegram.png" alt="" /></a>
+                        <a href="#"><img src="images/dribble.png" alt="" /></a>
+                      </div>
+              
+                      <button type="button">Follow</button>
+              
+                      <div class="card">
+                        <div class="poster">
+                          <img src="images/breakfast/12.jpeg" alt="Location Unknown" />
+                        </div>
+                        <div class="details">
+                          <h1>Pizza Pan Omelette</h1>
+                          <h2>2021 • PG • 1hr 38min</h2>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.2/5</span>
+                          </div>
+                          <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Food</span>
+                            <span class="tag">breakfast</span>
+                          </div>
+                          <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a
+                            solitary journey in search for meaning.
+                            <br /><br />
+                            <a href="recipes.html">Read More</a>
+                          </p>
+                        </div>
+                      </div>
+                      <p>View More Recipes</p>
+                      <a href="recipes.html"><img src="images/arrow.png" class="arrow" /></a>
+                    </div>
+              
+                    <div class="profile-box">
+                      <img src="images/menu.png " class="menu-icon" alt="" />
+                      <img src="images/setting.png " class="setting-icon" alt="" />
+                      <img src="images/pic 3.png" class="pic-icon" alt="" />
+                      <h3>Jack NIcholson</h3>
+                      <p>Chef at Vijoks, California</p>
+                      <div class="social">
+                        <a href="#"><img src="images/instagram.png" alt="" /></a>
+                        <a href="#"><img src="images/telegram.png" alt="" /></a>
+                        <a href="#"><img src="images/dribble.png" alt="" /></a>
+                      </div>
+              
+                      <button type="button">Follow</button>
+              
+                      <div class="card">
+                        <div class="poster">
+                          <img src="images/breakfast/11.jpeg" alt="Location Unknown" />
+                        </div>
+                        <div class="details">
+                          <h1>Roti cheese egg</h1>
+                          <h2>2021 • PG • 1hr 38min</h2>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.2/5</span>
+                          </div>
+                          <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Food</span>
+                            <span class="tag">breakfast</span>
+                          </div>
+                          <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a
+                            solitary journey in search for meaning.
+                            <br /><br />
+                            <a href="recipes.html">Read More</a>
+                          </p>
+                        </div>
+                      </div>
+              
+                      <p>View More Recipes</p>
+                      <a href="recipes.html"><img src="images/arrow.png" class="arrow" /></a>
+                    </div>
+                    <div class="profile-box">
+                      <img src="images/menu.png " class="menu-icon" alt="" />
+                      <img src="images/setting.png " class="setting-icon" alt="" />
+                      <img src="images/pic 4.jpg" class="pic-icon" alt="" />
+                      <h3>Jack NIcholson</h3>
+                      <p>Chef at Vijoks, California</p>
+                      <div class="social">
+                        <a href="#"><img src="images/instagram.png" alt="" /></a>
+                        <a href="#"><img src="images/telegram.png" alt="" /></a>
+                        <a href="#"><img src="images/dribble.png" alt="" /></a>
+                      </div>
+              
+                      <button type="button">Follow</button>
+              
+                      <div class="card">
+                        <div class="poster">
+                          <img src="images/breakfast/13.jpeg" alt="Location Unknown" />
+                        </div>
+                        <div class="details">
+                          <h1>Green Dumple Egg</h1>
+                          <h2>2021 • PG • 1hr 38min</h2>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.2/5</span>
+                          </div>
+                          <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Food</span>
+                            <span class="tag">breakfast</span>
+                          </div>
+                          <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a
+                            solitary journey in search for meaning.
+                            <br /><br />
+                            <a href="recipes.html">Read More</a>
+                          </p>
+                        </div>
+                      </div>
+                      <p>View More Recipes</p>
+                      <a href="recipes.html"><img src="images/arrow.png" class="arrow" /></a>
+                    </div>
+                  </div>
+                </body>
+              </html>
+              
+            </div>
+        </div>
+    </section>
+    <!-- Contact US -->
+    <section class="contactus" id="contactus">
+        <div class="title">
+            <h2 class="titeText"><span>C</span>ontact Us</h2>
+           
+        </div>
+        <form action="" method="POST">
+        <div class="contactform">
+            <h3>Send Message</h3>
+            <div class="inputbox">
+                <input type="text" placeholder="Name" name="name" required>
+            </div>
+            <div class="inputbox">
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="inputbox">
+                <textarea placeholder="Message" name="message" required></textarea>
+            </div>
+            <div class="inputbox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+        </form>
+    </section>
+   <!-- FOOTER  -->
+   <footer>
+    <div class="footer_container">
+      <div class="logo"> <p>Cook.io </p></div>
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>Cook.io © 2023 All Rights Reserved.</p>
+      </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="D:\Coding\Web Packages\fontawesome\fontawesome-free-5.14.0-web\css\all.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cook.io</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipes.html">Recipes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Register
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="personal-d.html">Personal Dashboard</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    <input id="searchbar" onkeyup="search_recipes()" type="text"
+        name="search" placeholder="Search recipes">
+<div class="list">
+    <ul id='list'>
+        <li class="recipes">
+            <p class="name">Fried Eggs With Tomato</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Fried Eggs With Tomato</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/1.jpg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li>
+         <li class="recipes">
+
+            <p class="name">Waffles with mushed cherry</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Waffles with mushed cherry</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/2.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Pancakes with blueberries</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Pancakes with blueberries</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/3.jpg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Msahed Potatoes</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Mashed potatoes</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/5.jpg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Indian Egg Paratha</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Indian Egg Paratha</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/6.jpg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Vegies fried Egg</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Vegies fried Egg</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/7.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Pancake Omelette</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Pancake omelette</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/17.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Tortilla Wraps</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Tortilla Wraps</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/8.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Pocket Eggs</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Pocket eggs</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/9.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Mushed cherries</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Mushed cherries</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/10.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Roti cheese egg</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Roti cheese egg</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/11.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Pizza Pan Omelette</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Pizza pan Omelette</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/12.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+         <li class="recipes">
+
+            <p class="name">Dumple eggs</p>
+            
+                <div class="wrapper">
+                    <div id="card-container">
+                        <div id="card-title">Dumple eggs</div>
+                        <div id="recipe-image" style="background-image: url(images/breakfast/13.jpeg)"></div>
+                        <div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+                                class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one
+                                loaf</span></div>
+                        <div id="card-items">
+                            <span class="card-item-title">Ingredients</span>
+                            <ol class="checkmark">
+                                <li>2 to 3 very ripe bananas, peeled</li>
+                                <li>1/3 cup melted butter</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>Pinch of salt</li>
+                                <li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+                                <li>1 large egg, beaten</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 1/2 cups of all-purpose flour</li>
+                            </ol>
+                        </div>
+
+                        <div id="method">
+                            <span class="card-item-title">Method</span>
+                            <ol>
+                                <li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+                                <li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir
+                                    the melted butter into the mashed bananas.</li>
+                                <li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract.
+                                    Mix in the flour.</li>
+                                <li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F
+                                    (175°C), or until a tester inserted into the center comes out clean.</li>
+                                <li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana
+                                    bread from the pan and let cool completely before serving. Slice and serve. (A bread
+                                    knife helps to make slices that aren't crumbly.)</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div> 
+        </li> 
+        
+      
+         
+          
+      </ul>
+    </div>
+
+   
+
+
+</body>
+
+</html>
